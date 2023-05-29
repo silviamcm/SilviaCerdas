@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(150, 94, 94);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+/*_______________________________________________________*/
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;/*hacen que las cosas queden encima */
+    position: fixed;
+}
+
+.main-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/***************************************************************************************/
+/*_________INICIO__________Nav__________________________*/
+
+header .main-container nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .main-container nav ul{
+    display: inline;
+    list-style: none;
+}
+header .main-container nav ul li{
+    display: inline;
+}
+header .main-container nav ul li a{
+    color: rgb(6, 7, 8);
+    padding: 16px;
+}
+header .main-container nav ul li a:hover{
+    color: rgb(150, 94, 94);
+    font-size: 19px;
+    font-weight: bold;
+}
+/*_________FIN__________Nav__________________________*/
+/***************************************************************************************/
+/*_________INICIO__________ID__________________________*/
+/*INICIO*/
+#inicio{
+    width: 100%;
+    height: 450px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*WHO*/
+#who{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*PROYECTOS*/
+#proyectos {
+    width: 100%;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+/*CONTACTAME*/
+#contactame{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    flex-direction: column;
+}
+/*_________FIN_____________ID_____________________________*/
+/***************************************************************************************/
+/*_________INICIO__________Contenedores__________________________*/
+/*HEADER,INCIO*/
+.main-container{
+    max-width: 1200px;
+    width: 90%;
+    height: inherit;
+}
+/*LOGO*/
+.logo-container{    
+    position: absolute;
+    display: flex;
+    height: inherit; /* Recordar que es la altura heredada del padre*/
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px; /*letf right*/
+}
+/*INICIO*/
+#inicio .txt-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*WHO*/
+#who .contenido-who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid rgb(150, 94, 94);
+    padding-bottom: 25px;
+}
+/*PROYECTOS*/
+#proyectos .contenedor-titulo{
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+/*CARDS*/
+#proyectos .contenedor-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+/*_________FIN_____________Contenedores_____________________________*/
+/***************************************************************************************/
+/*_________INICIO_____________Algunas a____________________________*/
+/*LOGO*/
+.logo-container a{
+    font-size: 20px;
+    color: aliceblue;
+}
+/*INICIO*/
+#inicio .txt-container .btn a{
+    width: auto;
+    border: 2px solid rgb(68, 141, 61);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px ;
+    color: white;
+}
+#inicio .txt-container .btn a:hover{
+    box-shadow: 0px 5px 10px 0px rgb(150, 94, 94);
+}
+/*_________FIN________________Algunas a____________________________*/
+/***************************************************************************************/
+/*_________INICIO________________Parte de Inicio____________________________*/
+#inicio .img-cover{
+    background-image: url(../assent/imagen/portada.jpg);
+    height: inherit; /*Utilizar esto en el proyecto con la altura heredada*/
+  /*  background-repeat: no-repeat;
+  background-position: center center;
+    background-size: cover;*/
+    width: 100%;
+}
+
+#inicio .txt-container .btn{
+    padding: 0px 19px;
+    margin: 20px 0px;
+}
+
+#inicio .txt-container .txt-intro{
+    padding:  0 19px;
+    width: 60%;
+
+}
+#inicio .txt-container .txt-intro p{
+    line-height: 2;
+    color: white;
+}
+#inicio .txt-container .txt-intro h1{
+    line-height: 2;
+    color:rgb(68, 141, 61);
+}
+/*_________FIN______   __________Parte de Inicio____________________________*/
+/***************************************************************************************/
+/*_________INICIO__________Who__________________________*/
+#who .contenido-who .img-who{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#who .contenido-who .img-who img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#who .contenido-who .texto-who{
+    padding: 0px 19px;
+
+}
+#who .contenido-who .texto-who p{
+    line-height: 2;
+    text-align: justify;
+}
+/*_________FIN_____________Who__________________________*/
+/***************************************************************************************/
+/*_________INICIO__________Cards__________________________*/
+#proyectos .contenedor-cards .cards{
+    width: 200px;
+    height: 200px;
+    padding: 2em 1.5em;
+    border-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 0 35px burlywood;
+}
+.cards h4{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+.cards h3{
+    margin: 5px 0px;
+
+}
+.cards p{
+    line-height: 1.8;
+}
+.cards:hover{
+    background-color: rgb(150, 94, 94);
+}
+.cards:hover h4{
+    color: aliceblue;
+}
+/*_________FIN_____________Cards__________________________*/
+/***************************************************************************************/
+/*_________INICIO__________Form__________________________*/
+#contactame .titulo-contacto{
+    margin-top: 45px;
+}
+
+#contactame .form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+#contactame form input, #contactame form textarea{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 500px;
+    outline: none;
+}
+#contactame form input::placeholder{
+    color:  rgb(150, 94, 94);
+    font-weight: bold;
+}
+#contactame form input[type="button"]{
+    width: 520px;
+    box-shadow: 0px 5px 10px 0px rgb(150, 94, 94);
+}
+/*_________FIN_____________Form_____________________________*/
+/*_________INICIO_____________Footer_____________________________*/
+footer{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 94, 94);
+    padding-bottom: 20px;
+}
+footer .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: ce;
+}
+
+footer .social-media .social-media-box{
+    margin: 20px;
+}
+
+footer .social-media .social-media-box img{
+    width: 30px;
+    height: 30px;
+}
+/*_________FIN_____________Footer_____________________________*/
+
